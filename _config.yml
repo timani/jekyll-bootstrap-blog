@@ -12,14 +12,14 @@ navigation:
 - text: About
   url: /about.html
 - text: Layouts
-  url: /layouts.html
+  url: /layouts/
   children:
   - text: Default
-    url: /layout/default.html
+    url: /layouts/default.html
   - text: Sidebar Left
-    url: /layout/sidebar-left.html
+    url: /layouts/sidebar-left.html
   - text: No Sidebar
-    url: /layout/no-sidebar.html
+    url: /layouts/no-sidebar.html
 
 paginate: 10
 
