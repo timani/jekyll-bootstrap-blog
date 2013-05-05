@@ -5,7 +5,9 @@ layout: default
 {% for post in paginator.posts %}
     <div class="hentry">
         <h2 class="entry-title"><a href="{{ site.baseurl }}{{ post.url }}" rel="bookmark">{{ post.title }}</a></h2>
-        <p class="published" title="{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}"><i class="icon-calendar"></i> {{ post.date | date: "%b %d, %Y" }}</p>
+        <p>
+            <span class="vcard"><i class="icon-user"></i> <span class="fn">{% if post.author %}{{ post.author }}{% else %}{{ site.author }}{% endif %}</span></span>
+            | <abbr class="published" title="{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}"><i class="icon-calendar"></i> {{ post.date | date: "%b %d, %Y" }}</abbr></p>
         <p class="entry-summary">{{ post.content | strip_html | truncatewords: 50 }}</p>
         <p><a href="{{ site.baseurl }}{{ post.url }}" rel="nofollow">Read more</a></p>
     </div>

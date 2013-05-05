@@ -1,5 +1,6 @@
 name: Jekyll Bootstrap Blog
 description: A blog theme for Jekyll using Twitter Bootstrap
+author: Andrew Shell
 
 navigation:
 - text: Home
