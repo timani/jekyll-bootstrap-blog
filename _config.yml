@@ -2,7 +2,7 @@ name: Jekyll Bootstrap Blog
 description: A blog theme for Jekyll using Twitter Bootstrap
 author: Andrew Shell
 
-disqus_shortname: test1geekity
+disqus_shortname: jekyll-bootstrap-blog
 
 navigation:
 - text: Home
