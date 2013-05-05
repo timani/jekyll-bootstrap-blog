@@ -2,6 +2,7 @@
 layout: default
 title: Another Post
 author: Lauren Ipsum
+category: Uncategorized
 ---
 Suspendisse ac quam eu odio aliquam pellentesque. Donec a dapibus ligula.
 Suspendisse aliquam pulvinar est, ut dictum nisi vehicula at. Maecenas porta,
