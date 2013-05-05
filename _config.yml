@@ -16,6 +16,10 @@ navigation:
   children:
   - text: Default
     url: /layout/default.html
+  - text: Sidebar Left
+    url: /layout/sidebar-left.html
+  - text: No Sidebar
+    url: /layout/no-sidebar.html
 
 paginate: 10
 
