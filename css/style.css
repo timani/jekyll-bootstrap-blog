@@ -35,6 +35,18 @@ body {
     margin: 40px 20px 20px 0;
 }
 
+.sidebar-left .content {
+    margin: 40px 20px 20px 0;
+}
+
+.sidebar-left .sidebar {
+    margin: 40px 0 20px 20px;
+}
+
+.no-sidebar .content {
+    margin: 40px 20px 20px 20px;
+}
+
 .site-name {
   margin: 10px 0;
   font-family: inherit;
