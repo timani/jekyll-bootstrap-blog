@@ -15,6 +15,14 @@ navigation:
 
 paginate: 10
 
+# Scheme and Hostname for your website without trailing slash
+# (ex: https://andrewshell.github.com)
+url: http://www.jekyll-bootstrap-blog
+
+# Folder part of the path to get to your website without trailing slash
+# (ex: /projectname)
+baseurl:
+
 auto: true
 safe: true
 server: true
