@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="{{ site.description }}">
     <meta name="author" content="{{ site.author }}">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} Feed" href="{{ site.baseurl }}/rss.xml" />
 
     <!-- Le styles -->
     <link href="{{ site.baseurl }}/css/bootstrap.css" rel="stylesheet">
@@ -33,54 +34,6 @@
         <div class="span12">
             <p class="site-name"><a rel="home" title="{{ site.name }}" href="{{ site.baseurl }}/">{{ site.name }}</a></p>
             {% if site.description %}<p class="site-description">{{ site.description }}</p>{% endif %}
-        
-            <div class="navbar navbar-inverse">
-                <div class="navbar-inner">
-                    <ul class="nav">
-                    {% for link in site.navigation %}
-                        {% assign current = nil %}
-                        {% capture fullurl %}{{ link.url }}index.html{% endcapture %}
-                        {% if page.url == fullurl or page.url == link.url %}
-                            {% assign current = 'active' %}
-                        {% endif %}
-
-                        {% if link.external %}
-                            {% assign link_url = link.url %}
-                        {% else %}
-                            {% capture link_url %}{{ site.baseurl }}{{ link.url }}{% endcapture %}
-                        {% endif %}
-
-                        {% if link.children %}
-                        <li class="dropdown {{ current }}">
-                            <a href="{{ link_url }}" class="dropdown-toggle" data-toggle="dropdown">{{ link.text }} <b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                            {% for childlink in link.children %}
-                                {% if childlink.external %}
-                                    {% assign childlink_url = childlink.url %}
-                                {% else %}
-                                    {% capture childlink_url %}{{ site.baseurl }}{{ childlink.url }}{% endcapture %}
-                                {% endif %}
-                                <li><a href="{{ childlink_url }}">
-                                    {% if childlink.icon %}
-                                    <i class="{{ childlink.icon }}" alt="{{ childlink.text }}" title="{{ childlink.text }}"></i>
-                                    {% endif %}
-                                    {{ childlink.text }}
-                                </a></li>
-                            {% endfor %}
-                            </ul>
-                        </li>
-                        {% else %}
-                            <li class="{{ current }}"><a href="{{ link_url }}">
-                                {% if link.icon %}
-                                <i class="{{ link.icon }}" alt="{{ link.text }}" title="{{ link.text }}"></i>
-                                {% endif %}
-                                {{ link.text }}
-                            </a></li>
-                        {% endif %}
-                    {% endfor %}
-                        <li><a href="{{ site.baseurl }}/rss.xml"><i class="icon-rss" alt="RSS" title="RSS"></i></a></li>
-                    </ul>
-                </div>
-            </div>
+            {% include navbar.html %}
         </div>
     </div>

@@ -6,6 +6,7 @@ body {
 .wrapper {
     background-color: #FFFFFF;
     border-radius: 4px 4px 4px 4px;
+    margin-bottom: 30px;
 }
 
 .content {
@@ -14,6 +15,16 @@ body {
 
 .sidebar {
     margin: 40px 20px 20px 0;
+}
+
+.site-name {
+  margin: 10px 0;
+  font-family: inherit;
+  font-size: 38.5px;
+  font-weight: bold;
+  line-height: 40px;
+  color: inherit;
+  text-rendering: optimizelegibility;
 }
 
 @media (max-width: 767px) {
