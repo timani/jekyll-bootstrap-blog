@@ -3,25 +3,25 @@ body {
     color: #555555;  
 }
 
-#wrapper {
+.wrapper {
     background-color: #FFFFFF;
     border-radius: 4px 4px 4px 4px;
-    /*
-    border: 1px solid #E5E5E5;
-    margin-bottom: 30px;
-    padding: 0 20px 20px;
-    */
 }
 
-#content {
-    /*
-    margin-bottom: 20px;
-    margin-top: 40px;
-    */
+.content {
+    margin: 40px 0 20px 20px;
 }
 
-#sidebar {
-    /*
-    margin-top: 40px;
-    */
+.sidebar {
+    margin: 40px 20px 20px 0;
+}
+
+@media (max-width: 767px) {
+    .content {
+        margin: 40px 20px 20px 20px;
+    }
+
+    .sidebar {
+        margin: 40px 20px 20px 20px;
+    }
 }

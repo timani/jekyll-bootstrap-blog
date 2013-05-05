@@ -1,2 +1,19 @@
 name: Jekyll Bootstrap Blog
 description: A blog theme for Jekyll using Twitter Bootstrap
+
+navigation:
+- text: Home
+  url: /
+- text: About
+  url: /about.html
+- text: Layouts
+  url: /layouts.html
+  children:
+  - text: Default
+    url: /layout/default.html
+
+paginate: 10
+
+auto: true
+safe: true
+server: true
