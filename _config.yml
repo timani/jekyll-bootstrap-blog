@@ -31,6 +31,8 @@ url: http://www.jekyll-bootstrap-blog.com
 # (ex: /projectname)
 baseurl:
 
+githuburl: https://github.com/andrewshell/jekyll-bootstrap-blog
+
 auto: true
 safe: true
 server: true
