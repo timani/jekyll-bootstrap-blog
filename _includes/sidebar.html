@@ -1,11 +1,4 @@
 <div class="widget-wrapper">
-<iframe 
-    src="http://duckduckgo.com/search.html?width=250&site={{ site.url }}{{ site.baseurl }}/&prefill=Search {{ site.name }}" 
-    style="overflow:hidden;margin:0;padding:0;width:308px;height:40px;" 
-    frameborder="0"></iframe>
-</div>
-
-<div class="widget-wrapper">
 <h3 class="widget-title">Recent Posts</h3>
 <ul>
 {% for post in site.posts limit:10 %}
