@@ -1,5 +1,12 @@
 <div class="navbar navbar-inverse">
     <div class="navbar-inner">
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </a>
+    
+        <div class="nav-collapse collapse">
         <ul class="nav">
         {% for link in site.navigation %}
             {% assign current = nil %}
@@ -44,5 +51,6 @@
         {% endfor %}
             <li><a href="{{ site.baseurl }}/rss.xml"><i class="icon-rss" alt="RSS" title="RSS"></i></a></li>
         </ul>
+        </div>
     </div>
 </div>
