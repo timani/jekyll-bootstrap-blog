@@ -33,6 +33,4 @@ baseurl:
 
 githuburl: https://github.com/andrewshell/jekyll-bootstrap-blog
 
-auto: true
 safe: true
-server: true
