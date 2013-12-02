@@ -1,13 +1,13 @@
 {% include header.html %}
 <div class="row">
-    <div class="span12 wrapper sidebar-left">
+    <div class="col-md-12 wrapper sidebar-left">
         <div class="row">
-            <div class="span4">
+            <div class="col-md-4">
                 <div class="sidebar">
                     {% include sidebar.html %}
                 </div>
             </div>
-            <div class="span8">
+            <div class="col-md-8">
                 <div class="content">
                     {% if page.title %}<h1>{{ page.title }}</h1>{% endif %}
                     <ul class="inline">
@@ -15,7 +15,7 @@
                         {% if page.date %}<li><abbr class="published" title="{{ page.date | date: "%a, %d %b %Y %H:%M:%S %z" }}"><i class="icon-calendar"></i> {{ page.date | date: "%b %d, %Y" }}</abbr></li>{% endif %}
                     </ul>
                     {{ content }}
-                    
+
                     {% include comments.html %}
                 </div>
             </div>

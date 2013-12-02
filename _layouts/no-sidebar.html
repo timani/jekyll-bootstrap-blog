@@ -1,8 +1,8 @@
 {% include header.html %}
 <div class="row">
-    <div class="span12 wrapper no-sidebar">
+    <div class="col-md-12 wrapper no-sidebar">
         <div class="row">
-            <div class="span12">
+            <div class="col-md-12">
                 <div class="content">
                     {% if page.title %}<h1>{{ page.title }}</h1>{% endif %}
                     <ul class="inline">
@@ -10,7 +10,7 @@
                         {% if page.date %}<li><abbr class="published" title="{{ page.date | date: "%a, %d %b %Y %H:%M:%S %z" }}"><i class="icon-calendar"></i> {{ page.date | date: "%b %d, %Y" }}</abbr></li>{% endif %}
                     </ul>
                     {{ content }}
-                    
+
                     {% include comments.html %}
                 </div>
             </div>

@@ -1,9 +1,7 @@
-    <div id="footer" class="row">
-        <div class="span12">
-            <p class="pull-right"><small><a href="http://www.jekyll-bootstrap-blog.com/">Jekyll Bootstrap Blog</a> powered by <a href="http://pages.github.com/">GitHub Pages</a></small></p>
-            <p><small>&copy; {{ site.time | date: '%Y' }} <a href="{{ site.baseurl }}/">{{ site.name }}</small></a>
-        </div>
-    </div>
+<div class="container" id="footer">
+    <p class="pull-right"><small><a href="http://www.jekyll-bootstrap-blog.com/">Jekyll Bootstrap Blog</a> powered by <a href="http://pages.github.com/">GitHub Pages</a></small></p>
+    <p><small>&copy; {{ site.time | date: '%Y' }} <a href="{{ site.baseurl }}/">{{ site.name }}</small></a>
+</div>
 
 </div><!-- .container -->
 
@@ -21,9 +19,9 @@
     })();
 
     </script>
-    
+
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="{{ site.baseurl }}/js/jquery-1.9.1.min.js"></script>
+    <script src="{{ site.baseurl }}/js/jquery-1.10.2.min.js"></script>
     <script src="{{ site.baseurl }}/js/bootstrap.min.js"></script>
 
     {% if site.disqus_shortname %}

@@ -30,18 +30,14 @@
 <body>
 {% if site.githuburl %}
 <a href="{{ site.githuburl }}">
-<img 
-    alt="Fork me on GitHub" 
-    src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png" 
+<img
+    alt="Fork me on GitHub"
+    src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png"
     style="position: absolute; top: 0; right: 0; border: 0;">
 </a>
 {% endif %}
-<div class="container">
-
-    <div id="header" class="row">
-        <div class="span12">
-            <p class="site-name"><a rel="home" title="{{ site.name }}" href="{{ site.baseurl }}/">{{ site.name }}</a></p>
-            {% if site.description %}<p class="site-description">{{ site.description }}</p>{% endif %}
-            {% include navbar.html %}
-        </div>
-    </div>
+<div class="container" id="header">
+    <p class="site-name"><a rel="home" title="{{ site.name }}" href="{{ site.baseurl }}/">{{ site.name }}</a></p>
+    {% if site.description %}<p class="site-description">{{ site.description }}</p>{% endif %}
+</div>
+{% include navbar.html %}

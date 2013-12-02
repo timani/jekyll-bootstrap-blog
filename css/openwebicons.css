@@ -22,6 +22,10 @@ a [class^="icon-"], a [class*=" icon-"] {
   text-decoration: inherit;
 }
 
+li[class^="icon-"], li[class*=" icon-"] {
+  display: block;
+}
+
 .icon-apml:before {
   content: "\f001";
 }
@@ -312,6 +316,37 @@ a [class^="icon-"], a [class*=" icon-"] {
   content: "\f030";
 }
 
+.icon-pub:before {
+  content: "\f045";
+}
+
+.icon-sub:before {
+  content: "\f046";
+}
+
+.icon-hubbub:before {
+  content: "\f045";
+}
+
+.icon-pub-colored:before {
+  content: "\f045";
+  color: #99cc00;
+}
+
+.icon-sub-colored:before {
+  content: "\f046";
+  color: #ffff00;
+}
+
+.icon-hubbub-colored:before {
+  content: "\f045";
+  color: #ff6fcf;
+}
+
+.icon-pubsubhubbub:before {
+  content: "\f047";
+}
+
 .icon-cc:before {
   content: "\f080";
 }
@@ -378,4 +413,56 @@ a [class^="icon-"], a [class*=" icon-"] {
 
 .icon-indiewebcamp:before {
   content: "\f08b \f08c \f08d";
+}
+
+.icon-webfinger:before {
+  content: "\f08e";
+}
+
+.icon-bitcoin:before {
+  content: "\f08f";
+}
+
+.icon-bitcoin-simple:before {
+  content: "\f090";
+}
+
+.icon-svg:before {
+  content: "\f049";
+}
+
+.icon-json-ld:before {
+  content: "\f048";
+}
+
+.icon-tent:before {
+  content: "\f050";
+}
+
+.icon-copyleft:before {
+  content: "\f051";
+}
+
+.icon-gnu:before {
+  content: "\f052";
+}
+
+.icon-ofl-attribution:before {
+  content: "\f081";
+}
+
+.icon-ofl-share:before {
+  content: "\f085";
+}
+
+.icon-ofl-renaming:before {
+  content: "\f04a";
+}
+
+.icon-ofl-selling:before {
+  content: "\f04b";
+}
+
+.icon-ofl-embedding:before {
+  content: "\f04c";
 }

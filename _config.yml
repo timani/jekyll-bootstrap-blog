@@ -8,7 +8,7 @@ disqus_shortname: jekyll-bootstrap-blog
 navigation:
 - text: Home
   url: /
-  icon: icon-home
+  icon: "glyphicon glyphicon-home"
 - text: About
   url: /about.html
 - text: Layouts
