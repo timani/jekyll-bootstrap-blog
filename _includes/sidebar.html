@@ -1,6 +1,6 @@
 <div class="widget-wrapper">
 <h3 class="widget-title">Recent Posts</h3>
-<ul>
+<ul class="nav list-untyled">
 {% for post in site.posts limit:10 %}
     <li><a href="{{ site.baseurl }}{{post.url}}">{{ post.title }}</a></li>
 {% endfor %}
